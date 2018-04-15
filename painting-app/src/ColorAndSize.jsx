@@ -14,11 +14,15 @@ class ColorAndSize extends Component {
         <div className="half_color_and_size">
           <label id="brush_size_label">Brush Size: </label> <br/> <input type="range" min="1" max="50" step="1"></input>
         </div>
+
+
+
+
       </div>
     );
   }
 
-  
+
 
 
 

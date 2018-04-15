@@ -5,8 +5,14 @@ import './App.css';
 import ColorAndSize from './ColorAndSize';
 import DrawingSpace from './DrawingSpace';
 import BrushTypes from './BrushTypes';
+import BrushColorModal from './BrushColorModal';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    var brushColorModalReference;
+  }
+
   render() {
     return (
       <div className="App">
@@ -28,6 +34,8 @@ class App extends Component {
           <div id="brush_types" className="component_sections">
             <BrushTypes />
           </div>
+
+          <BrushColorModal reference={this.brushColorModalReference}/>
 
         </div>
       </div>
