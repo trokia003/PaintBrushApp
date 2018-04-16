@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 //section imports
-import ColorAndSize from './ColorAndSize';
+import ColorAndSize from './ColorAndSizeContainer';
 import DrawingSpace from './DrawingSpace';
 import BrushTypes from './BrushTypes';
 import BrushColorModal from './BrushColorModal';
@@ -11,7 +11,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      
+
     };
   }
 
@@ -23,18 +23,23 @@ class App extends Component {
         </header>
         <div id="body">
 
-          <div id="brush_color_and_size" className="component_sections">
-            <ColorAndSize />
-          </div>
+          {/*this is the container that aligns the components of the app horizontally*/}
+          <div className="horizontally_align_items">
+
+            <div id="brush_color_and_size_wrapper" className="component_sections">
+              <ColorAndSize />
+            </div>
 
 
-          <div id="drawing_space" className="component_sections">
-            <DrawingSpace />
-          </div>
+            <div id="drawing_space" className="component_sections">
+              <DrawingSpace />
+            </div>
 
 
-          <div id="brush_types" className="component_sections">
-            <BrushTypes />
+            <div id="brush_types_wrapper" className="component_sections">
+              <BrushTypes />
+            </div>
+
           </div>
 
         </div>

@@ -9,7 +9,7 @@ class DrawingSpace extends Component {
   render() {
     return (
       <div>
-        <canvas id="DrawingArea" width="600" height="400"/>
+        <canvas id="DrawingArea" width="800" height="600"/>
       </div>
     );
   }

@@ -19,7 +19,6 @@ class BrushTypes extends Component {
         <button className="brush_button"></button>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
-        <br/>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
@@ -30,7 +29,6 @@ class BrushTypes extends Component {
         <button className="brush_button"></button>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
-        <br/>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
         <button className="brush_button"></button>
