@@ -3,21 +3,20 @@ import React, { Component } from 'react';
 class BrushColorModal extends Component {
   constructor(props){
     super(props);
-    this.handleCancelClick = this.handleCancelClick.bind(this);
-    this.state = {isToggleOn: false};
+    this.state = {
+      isShowOn: this.props.showState
+    };
   }
 
-  /*create function for buttons*/
-  handleConfirmClick(){
-
-    this.setState({isToggleOn: false});
-  }
-  handleCancelClick(){
-    this.setState({isToggleOn: false});
+  cancelButtonClicked(){
+    this.props.cancelButtonAction();
+    this.setState({
+      isShowOn: false
+    });
   }
 
   render() {
-    if(this.state.isToggleOn){
+    if(this.state.isShowOn){
       return (
         <div className="brush_color_and_size_modal">
           <h1>Change Brush Color</h1>
@@ -32,7 +31,7 @@ class BrushColorModal extends Component {
 
           <div className="modal_finish_buttons">
             <button>Confirm</button>
-            <button onClick={this.handleCancelClick}>Cancel</button>
+            <button onClick={this.cancelButtonClicked.bind(this)}>Cancel</button>
           </div>
         </div>
       );

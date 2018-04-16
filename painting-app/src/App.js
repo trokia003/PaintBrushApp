@@ -10,7 +10,9 @@ import BrushColorModal from './BrushColorModal';
 class App extends Component {
   constructor(props){
     super(props);
-    var brushColorModalReference;
+    this.state = {
+      
+    };
   }
 
   render() {
@@ -34,8 +36,6 @@ class App extends Component {
           <div id="brush_types" className="component_sections">
             <BrushTypes />
           </div>
-
-          <BrushColorModal reference={this.brushColorModalReference}/>
 
         </div>
       </div>
