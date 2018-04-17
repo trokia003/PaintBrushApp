@@ -39,6 +39,7 @@
     width: 150px;
     height: 600px;
     padding: 5px;
+    background-color: #000000;
   }
 
   .horizontally_align_items{
@@ -53,6 +54,22 @@
   .color_and_size_button{
     height: 60px;
     width: 60px;
+  }
+
+  #color_picker_section{
+    height: 290px;
+    border-color: #2F4F4F;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #778899;
+  }
+
+  #brush_size_section{
+    height: 290px;
+    border-color: #2F4F4F;
+    border-width: 5px;
+    border-style: solid;
+    background-color: #778899;
   }
 
 /*these stylings are for the brush color modal*/
