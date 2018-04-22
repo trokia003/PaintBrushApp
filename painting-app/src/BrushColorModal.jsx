@@ -8,6 +8,12 @@ class BrushColorModal extends Component {
     };
   }
 
+  update_currentBrushColor(new_color){
+    this.props.action_ChangeBrushColor(new_color);
+    
+    console.log("brush color was changed");
+  }
+
   cancel_ButtonClicked(){
     this.props.cancelButtonAction();
   }

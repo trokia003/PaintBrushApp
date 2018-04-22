@@ -48,6 +48,7 @@ class ColorAndSize extends Component {
           <BrushColorModal
             cancelButtonAction={this.handle_Cancel_Click.bind(this)}
             confirmButtonAction={this.handle_Confirm_Click.bind(this)}
+            action_ChangeBrushColor={this.props.action_ChangeBrushColor}
           />
 
         </div>
