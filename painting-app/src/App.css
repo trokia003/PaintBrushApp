@@ -72,6 +72,10 @@
     background-color: #778899;
   }
 
+  .center_contents{
+    margin-top: 100px;
+  }
+
 /*these stylings are for the brush color modal*/
   .brush_color_and_size_modal{
     position: fixed;

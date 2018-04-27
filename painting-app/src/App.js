@@ -12,7 +12,9 @@ class App extends Component {
     super(props);
     this.state = {
       currentBrushType: "simple_brush",
-      currentBrushColor: "#000000"
+      currentBrushColor_red: "000",
+      currentBrushColor_green: "000",
+      currentBrushColor_blue: "000"
     };
   }
 
@@ -43,6 +45,9 @@ class App extends Component {
               <ColorAndSize
                 action_ChangeBrushType={this.ChangeBrushType.bind(this)}
                 action_ChangeBrushColor={this.ChangeBrushColor.bind(this)}
+                current_redColor={this.state.currentBrushColor_red}
+                current_greenColor={this.state.currentBrushColor_green}
+                current_blueColor={this.state.currentBrushColor_blue}
               />
             </div>
 
