@@ -5,13 +5,12 @@ import './App.css';
 import ColorAndSize from './ColorAndSizeContainer';
 import DrawingSpace from './DrawingSpace';
 import BrushTypes from './BrushTypes';
-import BrushColorModal from './BrushColorModal';
 
 class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      currentBrushType: "simple_brush",
+      currentBrushType: "1",
       currentBrushColor_red: "000",
       currentBrushColor_green: "000",
       currentBrushColor_blue: "000"
@@ -24,10 +23,15 @@ class App extends Component {
       {currentBrushType: new_brushType}
     );
   }
-  ChangeBrushColor(new_brushColor){
-    this.setState(
-      {currentBrushColor: new_brushColor}
-    )
+  ChangeBrushColor(new_brushColor_red, new_brushColor_green, new_brushColor_blue){
+    this.setState({
+      currentBrushColor_red: new_brushColor_red,
+      currentBrushColor_green: new_brushColor_green,
+      currentBrushColor_blue: new_brushColor_blue
+    });
+
+    console.log("Inside of App.js the colors have changed");
+    console.log(this.state.currentBrushColor_red);
   }
 
   render() {
@@ -54,8 +58,10 @@ class App extends Component {
 
             <div id="drawing_space" className="component_sections">
               <DrawingSpace
-                current_color={this.state.currentBrushColor}
                 current_brush={this.state.currentBrushType}
+                current_redColor={this.state.currentBrushColor_red}
+                current_greenColor={this.state.currentBrushColor_green}
+                current_blueColor={this.state.currentBrushColor_blue}
               />
             </div>
 

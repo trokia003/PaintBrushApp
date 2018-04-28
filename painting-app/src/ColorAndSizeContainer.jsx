@@ -41,6 +41,9 @@ class ColorAndSize extends Component {
 
           <ColorAndSizeContents
             showColorModalButtonAction={this.handle_ShowColorModal_Click.bind(this)}
+            current_redColor={this.props.current_redColor}
+            current_greenColor={this.props.current_greenColor}
+            current_blueColor={this.props.current_blueColor}
           />
 
           {/*this is the modal that will pop up when the color button is pressed*/}
